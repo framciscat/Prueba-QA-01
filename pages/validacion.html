@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curious QA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <img src="/assets/images/curiousqa-logo.png" width="200" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/pages/rolQA.html">Rol del QA</a></li>
+                                    <li><a class="dropdown-item" href="/pages/habilidades.html">Habilidades</a></li>
+                                    <li><a class="dropdown-item" href="/pages/java.html">Sobre Java</a></li>
+                                    <li>
+                                      <a class="dropdown-item" href="/pages/validacion.html">Validación de código</a>
+                                    </li>
+                                  </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--TEXTO INICIAL-->
+    <div class="bg-light">
+        <div class="container">
+            <div class="row h-100 align-items-center py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4">¿Cómo validamos el código fuente de una aplicación?</h1>
+                    <p class="lead text-muted mb-0">Aspectos a considerar y formas de realizarlo
+                    </p>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block"><img src="/assets/images/code-img.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEXTO PRINCIPAL -->
+    <div class="container py-5">
+        <h2 class="h3 font-weight-bold">Validar desde los cimientos</h2>
+        <div class="row">
+            <div class="col-lg-10 mb-4">
+                <p class="font-italic text-muted">
+                    Validar el código fuente de una aplicación, será sumamente relevante para garantizar la calidad del
+                    producto final, puesto que, al probar el código escrito por los desarrolladores, tendremos más
+                    chances de que existan menos defectos, que, a su vez, se conviertan en fallas en el sistema.
+                    <br/><br/>
+                    Algunos aspectos a considerar para validar el código fuente, son los siguientes:
+                    <br/><br/>
+                    <strong>Cumplir estándares de codificación:</strong> Como analista QA, muchas veces, nuestra labor estará sujeta a
+                    diferentes pautas y estándares que se deben cumplir, los cuales varían según el lenguaje de
+                    programación utilizado, un ejemplo de ello es Java, que contiene pautas dirigidas por Oracle y
+                    Google.
+                    <br/><br/>
+                    <strong>Funcionalidad:</strong> Podemos asegurarnos de que el código cumpla con los requerimientos establecidos, a
+                    través de pruebas exhaustivas y revisiones de casos de prueba, entregando reportes oportunos a todo
+                    el equipo involucrado.
+                    <br/><br/>
+                    <strong>Seguridad:</strong> El QA puede verificar que el código sea seguro y esté protegido contra posibles
+                    vulnerabilidades, como algunas propuestas por el proyecto Open Web Application Security Project
+                    (OWASP), que determina una serie de causas que pueden llevar a un software a ser inseguro.
+                    <br/><br/>
+                    <strong>Normativas y regulaciones:</strong> Al momento de desarrollar una aplicación, esta podrá atenerse al
+                    cumplimiento de regulaciones específicas, que aseguren aspectos legales de acuerdo al país o rubro.
+                    <br/><br/>
+                    <strong>Cobertura de pruebas:</strong> Asegurar un número suficiente de pruebas unitarias, aumentará la confianza en
+                    el producto. Para ello, el QA debe revisar que la cobertura sea lo suficientemente grande para
+                    cubrir la mayor cantidad de código fuente.
+                    <br/><br/>
+
+
+                    <strong>¿De qué formas vamos a validar el código fuente?</strong>
+                    <br/><br/>
+                    <strong>Análisis estático:</strong> La pruebas estáticas significaran una revisión manual o mediante herramientas
+                    automatizadas del código fuente sin ejecutar. Al analizar el código fuente, nos entregará
+                    información sobre la profundidad de anidamiento del código, la complejidad ciclomática, estándares
+                    de codificación, flujo de control, relaciones de datos y número de rutas entre línea de código.
+                    <br/><br/>
+                    <strong>Pruebas unitarias:</strong> El QA puede realizar una revisión exhaustiva de las pruebas unitarias existentes,
+                    para asegurar la cobertura adecuada del código. Con esto, se podrá ayudar a los desarrolladores a
+                    identificar áreas que requieran pruebas adicionales.
+                    <br/><br/>
+                    <strong>Pruebas no funcionales:</strong> Conocidas como pruebas de las características de software, evalúan el
+                    correcto funcionamiento y velocidad del producto, como el tiempo de respuesta, seguridad, carga,
+                    etc. Algunas pruebas que encontraremos en esta clasificación son: pruebas de rendimiento, pruebas de
+                    estrés, pruebas de usabilidad, pruebas de confiabilidad y pruebas de portabilidad.
+                    <br/><br/>
+                    <strong>Pruebas Automatizadas:</strong> Al escribir scripts de prueba, podremos validar el código en repetidas
+                    ocasiones, facilitando la detección temprana de defectos en el código.
+                    <br/><br/>
+                    <strong>Pruebas funcionales: </strong>Responden a lo que debería hacer el sistema, obteniendo una cobertura
+                    funcional, que radica en cuantos componentes del sistema han sido probados. Algunos ejemplos de
+                    pruebas funcionales, serían las pruebas de caja negra y caja blanca.
+                    <br/><br/>
+                    <strong>Pruebas de caja negra:</strong> Aquellas pruebas en que no se requiere saber cómo funciona el software, sino
+                    los resultados que se obtienen al probarlo. Aquí encontraremos las pruebas de partición de
+                    equivalencia, análisis de valores frontera, pruebas de tabla de decisión, pruebas de transición de
+                    estado y pruebas de caso de uso.
+                    <br/><br/>
+                    <strong>Pruebas de caja blanca:</strong> Se basan en el código fuente del software y requieren saber cómo es su
+                    funcionamiento. Aquí encontraremos las pruebas de cobertura y sentencia, y pruebas de cobertura y
+                    decisión.
+                    <br/><br/>
+                    Es importante conocer y probar el código fuente del proyecto en cuestión, debido a que como Analista
+                    QA, encontrarás defectos y fallas que propiciaran información crucial para disminuir los costes y
+                    esfuerzos que significan reparar bugs en etapas más tardías de desarrollo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">¿Más información?</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                        Ingresar
+                    </button>
+                </p>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            <a class="text-white" href="https://github.com/framciscat">Framciscat</a>
+        </div>
+    </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
